@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-
+const logoSrc = "/logo.jpg";
 const brand = {
   name: "Huntline Dental Group",
   address: "1875 Highway 63, Westphalia, MO 65085",
