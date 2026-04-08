@@ -4,7 +4,7 @@ const brand = {
   name: "Huntline Dental Group",
   address: "1875 Highway 63, Westphalia, MO 65085",
   website: "https://huntlinedentalgroup.com",
-  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
+  formspreeEndpoint:"https://formspree.io/f/xwvwzlbw",,
 };
 
 const hurdleOptions = [
