@@ -256,7 +256,7 @@ export default function Home() {
               </div>
             </div>
           ) : (
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="grid gap-10 lg:grid-cols-[1fr_0.85fr]">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">Post-consultation survey</p>
                 <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Tell us about your experience</h2>
@@ -264,7 +264,7 @@ export default function Home() {
                   This short form is designed to capture how the experience felt and how our team can better support you after your consultation.
                 </p>
 
-                <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+                <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <TextField label="First name" name="firstName" value={formData.firstName} onChange={updateField} required />
                     <TextField label="Last name" name="lastName" value={formData.lastName} onChange={updateField} required />
@@ -402,14 +402,20 @@ function TextField({ label, name, value, onChange, type = "text", placeholder = 
 
 function SelectField({ label, name, value, onChange, options, required = false }) {
   return (
-    <label className="rounded-[1.5rem] border border-stone-200 bg-white p-6 shadow-sm">
-      <span className="text-base font-semibold tracking-tight text-stone-900">{label}</span>
+    <div className="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-sm">
+      <label
+        htmlFor={name}
+        className="block text-base font-semibold tracking-tight text-stone-900"
+      >
+        {label}
+      </label>
       <select
+        id={name}
         name={name}
         value={value}
         required={required}
         onChange={(e) => onChange(name, e.target.value)}
-        className="mt-4 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm text-stone-700 outline-none transition focus:border-orange-400"
+        className="mt-4 block w-full rounded-2xl border border-stone-300 bg-white px-4 py-4 text-base text-stone-700 outline-none transition focus:border-orange-400"
       >
         <option value="">Select one</option>
         {options.map((option) => (
@@ -418,7 +424,7 @@ function SelectField({ label, name, value, onChange, options, required = false }
           </option>
         ))}
       </select>
-    </label>
+    </div>
   );
 }
 
