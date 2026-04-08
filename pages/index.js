@@ -12,6 +12,7 @@ const hurdleOptions = [
   "No objection / already scheduled",
   "Need to discuss with spouse",
   "Financially unsure",
+  "Alternate treatment options with Huntline",
   "Fear / anxiety",
   "Timing",
   "Seeking second opinion",
@@ -143,7 +144,7 @@ export default function Home() {
                 Help us improve the patient experience
               </div>
               <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Thank you for meeting with Huntline Dental Group.
+                Thank you for choosing Huntline Dental Group.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">
                 We would love your feedback on scheduling, your consultation, and how clearly the next steps were explained. This short survey helps our team improve and better support patients after their visit.
