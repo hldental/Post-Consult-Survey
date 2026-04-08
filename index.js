@@ -11,7 +11,7 @@ const hurdleOptions = [
   "No objection / already scheduled",
   "Need to discuss with spouse",
   "Financially unsure",
-  "Interested in other options with Huntline",
+  "Interested in other treatment options with Huntline",
   "Fear / anxiety",
   "Timing",
   "Seeking second opinion",
