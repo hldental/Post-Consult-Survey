@@ -113,7 +113,6 @@ export default function Home() {
       <header className="sticky top-0 z-30 border-b border-stone-200/80 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-4">
-            <img src={logoSrc} alt="Huntline Dental Group logo" className="h-14 w-auto rounded-xl object-contain" />
             <div className="hidden sm:block">
               <p className="text-lg font-semibold tracking-tight text-stone-950">{brand.name}</p>
               <p className="text-sm text-stone-500">Post-consultation feedback</p>
